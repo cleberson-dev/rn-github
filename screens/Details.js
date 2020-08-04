@@ -1,10 +1,10 @@
 import React from 'react';
 import { Text, View, Button } from 'react-native';
 
-export default function ReposScreen({ navigation }) {
+export default function DetailsScreen({ navigation }) {
   return (
     <View>
-      <Text>Repos Screen</Text>
+      <Text>Details Screen</Text>
       <Button
         title="Voltar"
         onPress={() => navigation.goBack()}

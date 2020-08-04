@@ -16,7 +16,7 @@ export default function HomeScreen({ navigation }) {
       <Text>Olá, {username}!</Text>
       <Button 
         title="Ver repositórios"
-        onPress={() => navigation.navigate('Repos')}
+        onPress={() => navigation.navigate('Details')}
       />
     </View>
   );
