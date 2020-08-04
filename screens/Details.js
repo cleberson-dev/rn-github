@@ -18,6 +18,7 @@ export default function DetailsScreen({ navigation, route }) {
         source={{ uri: user.avatar_url || 'https://www.noupe.com/wp-content/uploads/2012/10/octocat.png' }} 
       />
       <Text>Olá, {user.name || user.login}</Text>
+      <Text>{user.public_repos} repositórios</Text>
       <Button title="Voltar" onPress={() => navigation.goBack()} />
     </View>
   ) : (
