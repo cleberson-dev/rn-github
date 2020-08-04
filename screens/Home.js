@@ -13,7 +13,10 @@ export default function HomeScreen({ navigation }) {
       />
       <Button 
         title="Ver repositórios"
-        onPress={() => navigation.navigate('Details', { user: userField })}
+        onPress={() => {
+          if (userField.length === 0) return;
+          navigation.navigate('Details', { user: userField });
+        }}
       />
     </View>
   );
